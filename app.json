@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Fave Spots",
+    "slug": "fave-spots",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/fave.png",
+    "splash": {
+      "image": "./assets/splash_icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1A1A1A"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.treudey.fave-spots",
+      "buildNumber": "1.0.0",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.treudey.fave_spots",
+      "versionCode": 1, 
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/fave-adaptive.png",
+        "backgroundColor": "#1A1A1A"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "CAMERA",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBNUBs-RM4Erm_o0wo3ScGN2sghLBp_FeQ"
+        }
+      }
+    }
+  }
+}
