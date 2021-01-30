@@ -1,7 +1,7 @@
 import React from 'react';
 import { TouchableOpacity, Image, StyleSheet } from 'react-native';
 
-import ENV from '../env';
+import { GOOGLE_API_KEY } from '@env';
 
 const MapPreview = props => {
   let imagePreviewUrl;
@@ -13,7 +13,7 @@ const MapPreview = props => {
       props.location.lng
     }&zoom=14&size=400x200&maptype=roadmap&markers=color:red%7Clabel:A%7C${
       props.location.lat
-    },${props.location.lng}&key=${ENV.googleApiKey}`;
+    },${props.location.lng}&key=${GOOGLE_API_KEY}`;
   }
 
   return (

@@ -1,8 +1,8 @@
 import * as FileSystem from 'expo-file-system';
+import { GOOGLE_API_KEY } from '@env';
 
 
 import { insertPlace, fetchPlaces, deletePlace, updatePlace } from '../helpers/db'; 
-import ENV from '../env';
 
 export const ADD_PLACE = 'ADD_PLACE';
 export const SET_PLACES = 'SET_PLACES';
@@ -12,7 +12,7 @@ export const UPDATE_PLACE = 'UPDATE_PLACE';
 export const addPlace = (title, image, location) => {
   return async dispatch => {
     const response = await fetch(
-      `https://maps.googleapis.com/maps/api/geocode/json?latlng=${location.lat},${location.lng}&key=${ENV.googleApiKey}`);
+      `https://maps.googleapis.com/maps/api/geocode/json?latlng=${location.lat},${location.lng}&key=${GOOGLE_API_KEY}`);
 
     if (!response.ok) {
       console.log(response);
@@ -78,7 +78,7 @@ export const removePlace = (placeId) => {
 export const editPlace = (id, title, imageTaken, image, location) => {
   return async dispatch => {
     const response = await fetch(
-      `https://maps.googleapis.com/maps/api/geocode/json?latlng=${location.lat},${location.lng}&key=${ENV.googleApiKey}`);
+      `https://maps.googleapis.com/maps/api/geocode/json?latlng=${location.lat},${location.lng}&key=${GOOGLE_API_KEY}`);
 
     if (!response.ok) {
       console.log(response);
