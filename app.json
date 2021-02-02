@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "Fave Spots",
+    "description": "An app for anyone who wants to bookmark places they've been or plan to go.",
     "slug": "fave-spots",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -35,7 +36,7 @@
       ],
       "config": {
         "googleMaps": {
-          "apiKey": "AIzaSyBNUBs-RM4Erm_o0wo3ScGN2sghLBp_FeQ"
+          "apiKey": ""
         }
       }
     }
