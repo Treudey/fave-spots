@@ -1,9 +1,9 @@
 # Fave Spots
 
-An app built with React Native for anyone who wants to bookmark places they've been or plan to go. Designed for iOS and Android.
+An app built with React Native for anyone who wants to bookmark places they've been or plan to go. Designed for Android (and eventually iOS).
 
-## Site
-
+## Google Play Store Link
+https://play.google.com/store/apps/details?id=com.treudey.fave_spots
 
 ## Technologies and Frameworks
 * React Native
